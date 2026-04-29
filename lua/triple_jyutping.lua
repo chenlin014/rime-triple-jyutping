@@ -48,7 +48,7 @@ function T.func(input, seg, env)
 	local codes = divide_string(input, 3)
 	local sound = ""
 
-	for _, code in ipairs(codes) do
+	for i, code in ipairs(codes) do
 		if #code == 1 then
 			code = code.."XX"
 		elseif #code == 2 then
@@ -73,6 +73,8 @@ function T.func(input, seg, env)
 
 	for c in t:iter() do
 		c.preedit = sound
+		c._start = seg.start
+		c._end = seg._end
 		yield(c)
 	end
 end
