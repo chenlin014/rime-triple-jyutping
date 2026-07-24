@@ -4,3 +4,6 @@
 
 本方案依賴於
 - [粵語拼音](https://github.com/rime/rime-cantonese)
+
+## 默認布局
+![默認布局](default_layout.png)
