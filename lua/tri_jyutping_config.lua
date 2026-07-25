@@ -7,14 +7,14 @@ config.keyboard = {
 }
 
 config.onset_map = {
-	"p", "c", "t",  "k",  nil, nil, "ng", "j", nil, nil,
-	"b", "z", "d",  "g",  "",  "h", "w",  "n", "l", nil,
-	"f", "s", "kw", "gw", nil, nil, "m"
+	"p", "c", "t", "k",  nil, nil, "kw", "j", nil, nil,
+	"b", "z", "d", "g",  "",  "h", "w",  "n", "l", "m",
+	"f", "s", nil, "ng", nil, nil, "gw"
 }
 
 config.group_map = {
-	nil, "a", "a", nil, "k", nil, nil, "n", "n", nil,
-	"a", "a", "a", "a", "k", nil, "n", "n", "n", "n",
+	nil, "a", "a", "a", "k", nil, "n", "n", "n", nil,
+	nil, "a", "a", "a", "k", nil, "n", "n", "n", nil,
 	nil, "k", "k", "k", "k"
 }
 
@@ -37,14 +37,14 @@ config.rime_maps = {
 }
 
 config.fallback_rime_map = {
-	"yu","u", "i",  "aa", nil,"eo","a", "e", "o","oe",
-	"yu","u", "i",  "aa", nil,"eo","a", "e", "o","oe",
-	"yu","u", "i",  "aa", nil,"eo","a", "e", "o","oe"
+	"yu","u", "i", "aa", nil,"eo","a", "e", "o","oe",
+	"yu","u", "i", "aa", nil,"eo","a", "e", "o","oe",
+	"yu","u", "i", "aa", nil,"eo","a", "e", "o","oe"
 }
 
 config.tone_map = {
-	nil, "5", "4", nil, "2", nil, nil, "4", "5", nil,
-	"2", "6", "3", "1", "4", nil, "1", "3", "6", "2",
+	nil, "5", "4", "2", "2", nil, "2", "4", "5", nil,
+	nil, "6", "3", "1", "4", nil, "1", "3", "6", nil,
 	nil, "6", "3", "1", "5"
 }
 
