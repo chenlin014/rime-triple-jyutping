@@ -48,6 +48,7 @@ function T.func(input, seg, env)
 	local codes = divide_string(input, 3)
 	local sound = ""
 
+	local code_count = 0
 	for i, code in ipairs(codes) do
 		if #code == 1 then
 			code = code.."XX"
@@ -59,6 +60,12 @@ function T.func(input, seg, env)
 		if not success or syllable == "" then break end
 
 		sound = sound.." "..syllable
+		code_count = i
+	end
+
+	local preedit = sound
+	if code_count < #codes then
+		preedit = sound .. " | " .. input:sub(code_count*3 + 1,#input)
 	end
 
 	if sound == "" then return end
@@ -72,7 +79,7 @@ function T.func(input, seg, env)
 	end
 
 	for c in t:iter() do
-		c.preedit = sound
+		c.preedit = preedit
 		c._start = seg.start
 		c._end = seg._end
 		yield(c)
