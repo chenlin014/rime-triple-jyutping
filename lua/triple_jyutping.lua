@@ -66,6 +66,8 @@ function T.func(input, seg, env)
 	local preedit = sound
 	if code_count < #codes then
 		preedit = sound .. " | " .. input:sub(code_count*3 + 1,#input)
+	elseif #input % 3 ~= 0 then
+		preedit = sound .. " (" .. codes[#codes] .. ")"
 	end
 
 	if sound == "" then return end
