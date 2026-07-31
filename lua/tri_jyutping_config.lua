@@ -25,9 +25,9 @@ config.rime_maps = {
 		nil, "",  "iu", "aau",nil,nil,"au","eu","ou"
 	},
 	n = {
-		"yung","ung","ing","aang",nil,"eong","ang","eng","ong","oeng",
-		"yun", "un", "in", "aan", nil,"eon", "an", "en", "on", "oen",
-		"yum", "um", "im", "aam", nil,"eom", "am", "em", "om", "oem"
+		"yung","ung","ing","aang","ng","eong","ang","eng","ong","oeng",
+		"yun", "un", "in", "aan", "n", "eon", "an", "en", "on", "oen",
+		"yum", "um", "im", "aam", "m", "eom", "am", "em", "om", "oem"
 	},
 	k = {
 		"yuk","uk","ik","aak",nil,"eok","ak","ek","ok","oek",
