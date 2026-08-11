@@ -42,6 +42,8 @@ engine:
 speller:
   alphabet: "zyxwvutsrqponmlkjihgfedcba;,./"
   initials: "zyxwvutsrqponmlkjihgfedcba;"
+  algebra:
+    - derive/\d// # 忽略聲調
 
 translator:
   dictionary: jyut6ping3

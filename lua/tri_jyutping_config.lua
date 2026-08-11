@@ -12,10 +12,16 @@ config.onset_map = {
 	"f", "s", nil, "ng", nil, nil, "gw"
 }
 
+config.tone_map = {
+	nil, "5", "4", "2", "2", nil, "2", "4", "5", nil,
+	nil, "6", "3", "1", "4", nil, "1", "3", "6", nil,
+	nil, "6", "3", "1", "5", nil, "",  "",  ""
+}
+
 config.group_map = {
 	nil, "a", "a", "a", "k", nil, "n", "n", "n", nil,
 	nil, "a", "a", "a", "k", nil, "n", "n", "n", nil,
-	nil, "k", "k", "k", "k"
+	nil, "k", "k", "k", "k", nil, "a", "n", "k"
 }
 
 config.rime_maps = {
@@ -40,12 +46,6 @@ config.fallback_rime_map = {
 	"yu","u", "i", "aa", nil,"eo","a", "e", "o","oe",
 	"yu","u", "i", "aa", nil,"eo","a", "e", "o","oe",
 	"yu","u", "i", "aa", nil,"eo","a", "e", "o","oe"
-}
-
-config.tone_map = {
-	nil, "5", "4", "2", "2", nil, "2", "4", "5", nil,
-	nil, "6", "3", "1", "4", nil, "1", "3", "6", nil,
-	nil, "6", "3", "1", "5"
 }
 
 return config
