@@ -1,7 +1,7 @@
 schema:
   schema_id: triple_jyutping
   name: 粵語三拼
-  version: "2026-07-25"
+  version: "2026-11-20"
   author:
     - 陳林 <1chen0bryan@gmail.com>
 
@@ -16,7 +16,6 @@ switches:
 
 engine:
   processors:
-    - lua_processor@*common.commit_n_return
     - ascii_composer
     - selector
     - lua_processor@*common.trikey*proc
@@ -41,7 +40,7 @@ engine:
 
 speller:
   alphabet: "zyxwvutsrqponmlkjihgfedcba;,./"
-  initials: "zyxwvutsrqponmlkjihgfedcba;"
+  initials: "zyxwvutsrqponmlkjihgfedcba"
   algebra:
     - derive/\d// # 忽略聲調
 
