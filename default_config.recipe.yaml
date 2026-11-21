@@ -4,6 +4,6 @@ recipe:
   Rx: default_config
   args:
   description: >-
-    筆調拼音默認設置
+    粵語三拼默認配置
 install_files: >-
-  lua/shuangpin_config.lua
+  lua/tri_jyutping_config.lua
