@@ -1,4 +1,4 @@
-local config = require("tri_jyutping_config")
+local config = require("triple_jyutping_config")
 
 local maps = {}
 maps.ind_of_key = {}
@@ -88,4 +88,4 @@ function T.func(input, seg, env)
 	end
 end
 
-return { tran=T }
+return T
